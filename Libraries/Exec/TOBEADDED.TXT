@@ -1,0 +1,11 @@
+AddSemaphore		- Initialize then add a signal semaphore to the system.
+AttemptSemaphore		- Try to obtain without blocking.
+AttemptSemaphoreShared	- Try to obtain without blocking.
+FindSemaphore		- Find a given system signal semaphore.
+InitSemaphore		- Initialize a signal semaphore.
+ObtainSemaphore		- Gain exclusive access to a semaphore.
+ObtainSemaphoreList	- Get a list of semaphores.
+ObtainSemaphoreShared	- Gain shared access to a semaphore.
+ReleaseSemaphore		- Make signal semaphore available to others.
+ReleaseSemaphoreList	- Make a list of semaphores available to others.
+RemSemaphore		- Remove a signal semaphore from the system.

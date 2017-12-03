@@ -1,0 +1,8 @@
+*.aout
+*.bin
+*.mex
+*.device
+*.exe
+*.old
+*.dll
+
