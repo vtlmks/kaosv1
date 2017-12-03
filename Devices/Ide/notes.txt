@@ -1,0 +1,70 @@
+
+	Struc PCIConfigSpaceStruct
+PCI_VendorID	ResW	1	; Vendor ID
+PCI_DeviceId	ResW	1	; Device ID
+PCI_CommandReg	ResW	1	; Command register
+PCI_StatusReg	ResW	1	; Status register
+PCI_RevisionID	ResB	1	;
+PCI_ProgIF	ResB	1
+PCI_SubClass	ResB	1
+PCI_ClassCode	ResB	1
+PCI_CachelineSize	ResB	1
+PCI_Latency	ResB	1
+PCI_HeaderType	ResB	1
+PCI_BIST	ResB	1
+	; Struct of either NonBridge, Bridge or CardBus structure follows here
+PCI_SIZE	EndStruc
+
+	Struc PCINonBridge
+PCIN_BaseAddress0	ResD	1
+PCIN_BaseAddress1	ResD	1
+PCIN_BaseAddress2	ResD	1
+PCIN_BaseAddress3	ResD	1
+PCIN_BaseAddress4	ResD	1
+PCIN_BaseAddress5	ResD	1
+PCIN_CardBusCIS	ResD	1
+PCIN_SubsysVID	ResW	1	; Subsystem vendor ID
+PCIN_SubsysDID	ResW	1	; Subsystem device ID
+PCIN_ExpROM	ResD	1	; ExpansionRom
+PCIN_CapPtr	ResB	1
+PCIN_RESERVED1	ResB	3
+PCIN_RESERVED2	ResD	1
+PCIN_IntLine	ResB	1	; Interrupt line
+PCIN_IntPin	ResB	1	; Interrupt pin
+PCIN_MinGrant	ResB	1
+PCIN_MaxLatency	ResB	1
+PCIN_DevSpecific	ResD	48	; Device specific
+PCIN_SIZE	EndStruc
+
+
+8680 1171 0500 8002 01 80 01 01 00 40 00 00
+00000000 00000000 00000000 00000000 
+21100000 00000000 00000000 0000 0000
+00000000 00 000000 00000000 00 00 00 00
+77 E3 03 A3 0B 00 00 00 03 00 22 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+00 00 00 00 00 00 00 00 30 0F 00 00 00 00 00 00
+
+
+
+VendorID = 8680
+DeviceID = 1171
+CommandReg = 0500
+RevisionID = 8002
+RevisionID = 01
+ProgIF     = 80
+SubClass   = 01
+ClassCode  = 01
+Cacheline  = 0
+Latency    = 40
+HeaderTpe  = 0
+BIST       = 0

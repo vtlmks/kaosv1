@@ -1,0 +1,11 @@
+All IFF functions should return 0, zero, for success. a IFF_RETURNTOCLIENT stops the parsing and returns to
+the caller. Any other value should be considered an error.
+
+Entry handler
+Exit handler
+
+When we issue a FreeIFF call, just hope that the caller have made a CloseIFF before, unless he wants a fucked iff file....
+
+IFFERR_EOF	- End_Of_File
+IFFERR_EOC	- End_Of_Context
+

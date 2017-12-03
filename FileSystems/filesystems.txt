@@ -1,0 +1,31 @@
+
+;-   -  - -- ---=--=-==-===-====-=====-====-===-==-=--=--- -- -  -   -
+
+FileSystem File/dir functions
+
+- Read
+- Write
+- Open
+- Close
+- Delete
+- Rename
+- Makedir
+- Seek
+- ....etc
+
+
+;-   -  - -- ---=--=-==-===-====-=====-====-===-==-=--=--- -- -  -   -
+
+mount structure
+
+ReservedHead	ResD	1	; Reserved blocks at start of partition
+ReservedTail	ResD	1	; Reserved blocks at end of partition
+SectorStart	ResD	1	; First (relative) sector of partition
+SectorEnd	ResD	1	; Last sector of partition
+MaxTransfer	ResD	1	; Max transfer at a time
+		;
+Surfaces	ResD	1	; No. surfaces, drive specific
+SectorsPerBlock	ResD	1	; Sector per block, drive specific
+BlocksPerTrack	ResD	1	; Blocks per track, drive specific
+
+
